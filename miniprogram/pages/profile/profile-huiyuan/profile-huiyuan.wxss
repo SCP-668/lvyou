@@ -1,0 +1,40 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  width:100%;
+  margin-top:-200rpx;
+  background-color: white;
+  align-items: center
+}
+
+.name,.userid,.country{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  height:100%;
+  width:100%;
+  font-size:36rpx;
+  margin:20rpx 0 20rpx 0;
+  background-color: white;
+  border-bottom: 1rpx solid rgb(238, 234, 234)
+}
+
+.province{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  height:100%;
+  width:100%;
+  font-size:36rpx;
+  margin:20rpx 0 20rpx 0;
+  background-color: white;
+}
+
+
+

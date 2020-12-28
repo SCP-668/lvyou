@@ -1,0 +1,26 @@
+
+
+.del {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(225, 0, 0);
+  -webkit-transform: translateX(90px);
+  transform: translateX(90px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-size: 35rpx;
+  border: 1px solid red;
+  margin-bottom: 10rpx;
+  margin-left: 30rpx;
+}
+.a{  border: 1px solid #FFc500;
+
+}
+.tab-content1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

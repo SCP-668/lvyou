@@ -1,0 +1,22 @@
+  <!-- 头部 -->
+  <view class="header">
+    <view class="publish-container" bind:tap="goToyuebanfabu">
+      <i class="iconfont icon-fabu"></i>
+    </view>
+    <view class="search-container" >
+      <x-search bind:search="onSearch"/>
+    </view>
+  </view>
+<view class="blog-list">
+  <!-- 内容 -->
+  
+  <block wx:for="{{ybList}}" wx:key="_id">
+    <x-yueban  ybList="{{item}}" data-ybListid="{{item._id}}" bind:tap="goComment" />
+  </block>
+  
+  
+</view>
+
+<!-- 底部弹出层 -->
+<x-login modalShow="{{modalShow}}" bind:loginsuccess="onLoginSuccess" bind:loginfail="onLoginFail">
+</x-login>

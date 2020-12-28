@@ -1,0 +1,24 @@
+<view wx:for="{{userInfo}}" class="container"  wx:key="*this">
+	<view class="userinfo padding">
+		<view class="country">
+			<text class="left">名字</text>
+			<text class="right">{{item.nickName}}</text>
+		</view>
+		<view class="userid">
+			<text class="left">用户识别号</text>
+			<text class="right">{{item.user_id}}</text>
+		</view>
+				<view class="userid">
+			<text class="left">性别</text>
+			<text class="right">{{item.gender}}</text>
+		</view>
+		<view class="country">
+			<text class="left">国家</text>
+			<text class="right">{{item.country}}</text>
+		</view>
+		<view class="province">
+			<text class="left">省份</text>
+			<text class="right">{{item.province}}</text>
+		</view>
+	</view>
+</view>

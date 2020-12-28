@@ -1,0 +1,131 @@
+/* pages/goToyuebanfabu/goToyuebanfabu.wxss */
+page{
+  background-color: #E4E4E4
+}
+
+::-webkit-scrollbar{
+  /* 取消滚动条 */
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100rpx; /* 取决于footer的高度 */
+}
+.view{
+  display: flex;
+  flex-direction: column;
+  height: 100%
+}
+.header .header-h{
+  display: flex;
+  position: relative
+}
+.circle{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%;
+  background-color: #F6BC41;
+  margin-top: 45rpx;
+  margin-left: 50rpx
+}
+text{
+  font-size: 35rpx;
+  margin-top: 60rpx;
+  margin-left: 50rpx
+}
+input{
+  width: 350rpx;
+  border: 1rpx solid #F6BC41;
+  border-radius: 10rpx;
+  text-align: left;
+}
+radio{
+  margin:0 5rpx;
+}
+.header view .align{
+  margin-top: 65rpx;
+  position: absolute;
+  margin-left: 370rpx
+}
+.aling-info{
+  width: 350rpx;
+  height: 52.5rpx;
+  border: 1rpx solid #F6BC41;
+  border-radius: 10rpx
+}
+.footer{
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 99;
+  justify-content: center;
+  bottom: 0
+
+}
+button{
+  background-color: #F6BC41;
+  width: 200rpx;
+  height: 100rpx
+}
+/* 图片样式 */
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20rpx;
+  margin-top: 10rpx
+}
+.image-wrap {
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 20rpx;
+  margin-bottom: 10rpx;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+.icon-wrong {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40rpx;
+  height: 40rpx;
+  background-color: #000;
+  opacity: 0.4;
+  color: #fff;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 38rpx;
+  font-weight: bolder;
+}
+.selectphoto {
+  border: 2rpx dashed #F6BC41;
+  position: relative;
+}
+.icon-add-fill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F6BC41;
+  font-size: 60rpx;
+}
+
+.content{
+  width: 350rpx;
+  height: 100rpx;
+  border: 1rpx solid #F6BC41;
+  border-radius: 10rpx;
+}
+.placeholder{
+  color: black;
+}

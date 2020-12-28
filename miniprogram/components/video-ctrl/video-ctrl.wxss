@@ -1,0 +1,68 @@
+/* components/blog-ctrl/blog-ctrl.wxss */
+.ctrl {
+  display: flex;
+  background: #fff;
+  justify-content: center;
+  padding-bottom: 10rpx
+}
+.ctrl-item {
+  flex: 1;
+  text-align: center;
+  color: rgba(40, 47, 60, 0.8);
+  font-size: 26rpx;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctrl-item .icon {
+  margin-top: 8rpx;
+  margin-right: 20rpx;
+  font-size: 50rpx;
+}
+.ctrl-item text {
+  font-size: 32rpx;
+}
+.comment-content {
+  width: 560rpx;
+  text-align: left;
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+.share-btn {
+  background-color: #fff;
+  color: rgba(40, 47, 60, 0.8);
+  padding: 0;
+  height: 100%;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.share-btn::after {
+  display: none;
+}
+
+.share-hover::after {
+  border: 0;
+}
+.icon-dianzan1.active{
+  color: #F6BC41
+}
+.comment-content {
+  width: 560rpx;
+  text-align: left;
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+.send {
+  background: #ffc500;
+  color: #fff;
+  font-size: 24rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+}

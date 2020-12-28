@@ -1,0 +1,34 @@
+<!--pages/goTovideofabu/goTovideofabu.wxml-->
+<view>
+  <view>
+    <!-- 内容 -->
+    <view class="text">
+      <text>请输入内容:</text>
+    </view>
+    <view class="input">
+      <textarea bindinput="content" placeholder="请输入内容"></textarea>
+    </view>
+  </view>
+
+  <view class="image-list">
+    <!-- 显示视频 -->
+    <block wx:if="{{videoSrc != ''}}">
+      <view class="video">
+      <video src="{{videoSrc}}"></video>
+      <i class="iconfont icon-wrong" bind:tap="onDelVideo" data-index="{{index}}"></i>
+      </view>
+    </block>
+
+    <!-- 选择视频 -->
+    <block wx:if="{{videoSrc === ''}}">
+      <view class="video-wrap selectphoto" bind:tap="chooseVideo" hidden="{{!selectPhoto}}">
+        <i class="iconfont icon-add-fill"></i>
+      </view>
+    </block>
+  </view>
+
+  <view class="footer">
+    <!-- 按钮 -->
+    <button bind:tap="send">发布</button>
+  </view>
+</view>

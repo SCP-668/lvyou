@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "x-login": "/components/login/login",
+    "x-tjlx-card": "/components/tjlx-card/tjlx-card"
+  },
+  
+
+    "navigationBarTitleText": "推荐路线"
+  
+  
+}

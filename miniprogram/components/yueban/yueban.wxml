@@ -1,0 +1,19 @@
+<view class="bg">
+<view class="contion">
+  <!-- 头像 -->
+  <view class="header">
+    <image src="{{ybList.avatarUrl}}"></image>
+  </view>
+
+  <!-- 正文 -->
+  <view class="contion">
+    <text>{{ybList.Content}}</text>
+  </view>
+
+  <!-- 图片 -->
+  <view class="setion">
+    <image src="{{ybList.img[0]}}"></image>
+  </view>
+</view>
+<view class="time">{{_createTime}}</view>
+</view>

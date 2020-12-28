@@ -1,0 +1,16 @@
+<!-- components/video-card/video-card.wxml -->
+<view class="blog">
+  <view class="blog-title">
+    <image class="blog-portrait" src="{{videolist.avatarUrl}}"></image>
+    <view class="blog-box">
+      <view class="blog-nickName">{{videolist.nickName}}</view>
+      <view class="blog-time">{{_createTime}}</view>
+    </view>
+  </view>
+  <view class="blog-content">
+    {{videolist.content}}
+  </view>
+  <view>
+    <video catch:tap="onPreviewVideo" src="{{videolist.video}}"></video>
+  </view>
+</view>

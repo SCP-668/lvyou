@@ -1,0 +1,33 @@
+<view>
+  <view class="content">
+    <view class="xuhao"></view>
+    <view class="julebu">俱乐部</view>
+    <view class="renqizhi">人气值</view>
+  </view>
+  <view id="di{{index}}" class="content-list" wx:if="{{index<3}}" wx:for="{{julebuList}}" wx:key="id" data-index="{{index}}">
+    <view class="xuhao">
+      <view class="img">
+        <image wx:if="{{index==0}}" src="../../images/diyi.png"></image>
+        <image wx:if="{{index==1}}" src="../../images/dier.png"></image>
+        <image wx:if="{{index==2}}" src="../../images/disan.png"></image>
+      </view>
+      <view class="img">
+        <image src="{{item.img1}}"></image>
+      </view>
+    </view>
+    <view class="julebu">{{item.name}}</view>
+    <view class="renqizhi">{{item.renqizhi}}</view>
+  </view>
+  <view id="di{{index}}" class="content-list1" wx:for="{{julebuList}}" wx:key="id" data-index="{{index}}" wx:if="{{index>2 && index<10}}">
+    <view class="xuhao">
+      <view class="img">
+        <text>{{index+1}}</text>
+      </view>
+      <view class="img">
+        <image src="{{item.img1}}"></image>
+      </view>
+    </view>
+    <view class="julebu">{{item.name}}</view>
+    <view class="renqizhi">{{item.renqizhi}}</view>
+  </view>
+</view>

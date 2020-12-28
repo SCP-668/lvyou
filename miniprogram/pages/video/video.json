@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "x-search": "/components/search/search",
+    "x-video-card":"/components/video-card/video-card",
+    "x-video-ctrl":"/components/video-ctrl/video-ctrl",
+    "x-login": "/components/login/login"
+  },
+  "navigationBarTitleText": "旅游视频",
+  "enablePullDownRefresh": true
+}

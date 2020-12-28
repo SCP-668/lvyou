@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "x-search": "/components/search/search",
+    "x-yueban": "/components/yueban/yueban",
+    "x-login": "/components/login/login"
+  },
+  "navigationBarTitleText": "个人约伴",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "x-login": "/components/login/login",
+    "x-tjlx-card": "/components/tjlx-card/tjlx-card",
+    "card2": "/components/card2/card2"
+  }
+  
+}

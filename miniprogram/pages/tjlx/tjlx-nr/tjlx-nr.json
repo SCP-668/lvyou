@@ -1,0 +1,5 @@
+{
+  "usingComponents": {"x-login": "/components/login/login"},
+  "navigationBarTitleText": "路线详情"
+
+}

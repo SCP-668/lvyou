@@ -1,0 +1,7 @@
+{
+  "usingComponents": {    
+
+    "x-tjlx-card": "/components/blog-card/blog-card"
+  },
+  "navigationBarTitleText": "我的游记"
+}

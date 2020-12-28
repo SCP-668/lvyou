@@ -1,0 +1,38 @@
+<view>
+  <view class="content-list">
+    <view id="di{{index}}" wx:if="{{index<3}}" wx:for="{{luyouList}}" wx:key="id" data-index="{{index}}">
+      <view class="img">
+        <image src="{{item.img1}}"></image>
+      </view>
+      <view class="img1">
+        <image wx:if="{{index==0}}" src="../../images/diyi(2).png"></image>
+        <image wx:if="{{index==1}}" src="../../images/dier(2).png"></image>
+        <image wx:if="{{index==2}}" src="../../images/disan(2).png"></image>
+      </view>
+      <view class="renming">{{item.name}}</view>
+      <view class="renqizhi0">
+        <view class="img2">
+          <image src="../../images/aixin.png"></image>
+        </view>
+        <view class="renqizhi1">{{item.renqizhi}}</view>
+      </view>
+    </view>
+  </view>
+  <view id="di{{index}}" class="content-list1" wx:for="{{luyouList}}" wx:key="id" data-index="{{index}}" wx:if="{{index>2 && index<10}}">
+    <view class="xuhao">
+      <view class="img">
+        <text>{{index+1}}</text>
+      </view>
+      <view class="img">
+        <image src="{{item.img1}}"></image>
+      </view>
+    </view>
+    <view class="renming1">{{item.name}}</view>
+    <view class="renqizhi">
+      <view class="img3">
+        <image src="../../images/aixin.png"></image>
+      </view>
+      <view class="renqizhi2">{{item.renqizhi}}</view>
+    </view>
+  </view>
+</view>

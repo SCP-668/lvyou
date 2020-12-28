@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "x-video-card": "/components/video-card/video-card",
+    "x-video-ctrl": "/components/video-ctrl/video-ctrl"
+  },
+  "navigationBarTitleText": "视频详情",
+  "enablePullDownRefresh": true
+}

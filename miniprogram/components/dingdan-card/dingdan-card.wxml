@@ -1,0 +1,33 @@
+
+<view class="orderDetails">
+	<view class="blog-content">{{dingdan.content}}</view>
+	<view class="orderListDetails">
+
+
+	<view class="blog-img">
+	
+			<image class="img" src="{{dingdan.img[0]}}" mode="aspectFill"></image>
+
+	</view>
+
+
+
+
+		<view class="productInfo">
+			<view class="productTitle">预定时间: {{dingdan.contentdate}} {{dingdan.contenttime}}</view>
+			  <wxs module="Filter" src="../../utils/filter.wxs"></wxs>
+        <text class="productPrice">当前状态：{{dingdan.ztai}}</text>
+
+		</view>
+	</view>
+
+
+
+	<view class="productCount">
+		<view>
+			<text>合计：￥{{dingdan.contentfy}}</text>
+		</view>
+	</view>
+
+	
+</view>

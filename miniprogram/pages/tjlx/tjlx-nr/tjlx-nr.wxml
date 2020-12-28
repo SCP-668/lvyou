@@ -1,0 +1,62 @@
+<!--pages/xiangqing/xiangqing.wxml-->
+<!-- 头像名称 -->
+<view class="info">
+  <view>
+    <image class="big" src="{{tjlxList.avatarUrl}}"></image>
+  </view>
+  <view class="text">
+    <view>{{tjlxList.nickName}}</view>
+    <view>{{tjlxList.createTime}}</view>
+  </view>
+</view>
+<!-- 内容图片 -->
+<view class="xq-info">
+  <view>
+    <text class="xq-text">{{tjlxList.content}}</text>
+  </view>
+  <view class="xq-img">
+    <block wx:for="{{tjlxList.img}}" wx:key="index">
+      <image class="xq-imgsize" src="{{item}}"></image>
+    </block>
+  </view>
+</view>
+<!-- 信息 -->
+<view class="xq-mess">
+  <view>
+    <text>出发日期：</text>
+    <text>{{tjlxList.contentdate}} {{tjlxList.contenttime}}</text>
+
+  </view>
+  <view>
+    <text>结束日期：</text>
+    <text>{{tjlxList.contentdata1}} {{tjlxList.contenttime1}} </text>
+  </view>
+  <view>
+    <text>目的地：{{tjlxList.contentmdd}}</text>
+    <text> </text>
+  </view>
+  <view>
+    <text>出发地：</text>
+    <text>{{tjlxList.contentdd}}</text>
+  </view>
+  <view>
+    <text>交通工具：{{tjlxList.contentjtgj}}</text>
+    <text> </text>
+  </view>
+</view>
+<view class="xq-mess1">
+  <view>
+    <text>路线费用：</text>
+    <text>{{tjlxList.contentfy}} </text>
+  </view>
+  <view>
+    <text>联系方式：</text>
+    <text>{{tjlxList.contenthaoma}}</text>
+  </view>
+</view>
+<view class="btn" wx:if="{{shareshow}}" bind:tap="onLoginSuccess" data-item="{{item}}" >
+  <button>申请加入</button>
+</view>
+
+
+

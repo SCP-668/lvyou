@@ -1,0 +1,32 @@
+<view>
+  <x-video-card videolist="{{videoList}}" />
+</view>
+
+<view class="blog-ctrl">
+  <x-video-ctrl videolist="{{videoList}}" videoListId="{{videoListId}}"  bind:refreshCommentList="_getBlogDetail"/>
+</view>
+
+  <view class="tab">
+    <view class="tab-item">评论列表</view>
+  </view>
+
+<view class="comment-list">
+    <!-- 评论 -->
+    <block wx:for="{{commentList}}" wx:key="_id">
+      <view class="comment">
+        <view class="comment-title">
+          <!-- 头像名字 -->
+          <image class="comment-portrait" src="{{item.avatarUrl}}"></image>
+          <text class="comment-nickname">{{item.nickName}}</text>
+        </view>
+        <view class="comment-content">
+          <!-- 内容 -->
+          {{item.content}}
+        </view>
+        <view class="comment-time">
+          <!-- 时间 -->
+          {{item.createTime}}
+        </view>
+      </view>
+    </block>
+  </view>

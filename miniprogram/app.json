@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/1874/1874",
+    "pages/profile/profile",
+    "pages/blog/blog",
+    "pages/blog-edit/blog-edit",
+    "pages/blog-comment/blog-comment",
+    "pages/grxb/grxb",
+    "pages/goToyuebanfabu/goToyuebanfabu",
+    "pages/xiangqing/xiangqing",
+    "pages/video/video",
+    "pages/video-comment/video-comment",
+    "pages/goTovideofabu/goTovideofabu",
+    "pages/tjlx/tjlx",
+    "pages/tjlx/tjlx-nr/tjlx-nr",
+    "pages/shangjiapaihangbang/shangjiapaihangbang",
+    "pages/paihangbang/paihangbang",
+    "pages/luyoudaren/luyoudaren",
+    "pages/lyfb/lyfb",
+    "pages/profile/profile-youji/profile-youji",
+    "pages/profile/profile-dingdan/profile-dingdan",
+    "pages/profile/profile-lishi/profile-lishi",
+    "pages/profile/profile-huiyuan/profile-huiyuan"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffc500",
+    "navigationBarTitleText": "1874旅游",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#474747",
+    "selectedColor": "#ffc500",
+    "list": [
+      {
+        "pagePath": "pages/1874/1874",
+        "text": "1874",
+        "iconPath": "images/navigation/1874.png",
+        "selectedIconPath": "images/navigation/active-1874.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/navigation/index.png",
+        "selectedIconPath": "images/navigation/active-index.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/navigation/profile.png",
+        "selectedIconPath": "images/navigation/active-profile.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,46 @@
+/* components/yueban/yueban.wxss */
+
+.bg{
+  background: #fff;
+  margin-top: 10rpx
+}
+.contion{
+  display: flex;
+}
+.header{
+  flex: 1;
+  margin-left: 20rpx;
+}
+.header > image{
+  margin-top: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%
+}
+.contion{
+  flex: 3
+}
+.contion > text{
+  width: 420rpx;
+  margin: 30rpx 10rpx;
+  text-indent: 20rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.setion{
+  flex: 1;
+  margin-right: 20rpx;
+}
+.setion > image{
+  width: 170rpx;
+  height: 170rpx;
+}
+
+.time{
+  margin: 0rpx 20rpx;
+  border-top: 1rpx solid #F6BC41
+}

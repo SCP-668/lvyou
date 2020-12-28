@@ -1,0 +1,35 @@
+<view>
+  <view class="zong">
+    <view  class="content-list">
+      <view  class="di{{index}}" wx:if="{{index<3}}" wx:for="{{shangjiaList}}" wx:key="id" data-index="{{index}}">
+        <view class="img0">
+          <image wx:if="{{index==0}}" src="../../images/diyi(1).png"></image>
+          <image wx:if="{{index==1}}" src="../../images/dier(1).png"></image>
+          <image wx:if="{{index==2}}" src="../../images/disan(1).png"></image>
+        </view>
+        <view class="img1">
+          <image src="{{item.img1}}"></image>
+        </view>
+        <view class="shangjia1">{{item.name}}</view>
+        <view class="renqizhi1">{{item.renqizhi}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="xuhao"></view>
+    <view class="shangjia">商家</view>
+    <view class="renqizhi">人气值</view>
+  </view>
+  <view id="di{{index}}" class="content-list1" wx:if="{{index>2 && index<10}}" wx:for="{{shangjiaList}}" wx:key="id" data-index="{{index}}">
+    <view  class="xuhao">
+      <view class="img">
+        <text>{{index+1}}</text>
+      </view>
+      <view class="img">
+        <image src="{{item.img1}}"></image>
+      </view>
+    </view>
+    <view class="shangjia">{{item.name}}</view>
+    <view class="renqizhi">{{item.renqizhi}}</view>
+  </view>
+</view>

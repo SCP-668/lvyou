@@ -1,0 +1,75 @@
+/* pages/login/login.wxss */
+
+page {
+  background-color: #ffc500;
+}
+
+.content {
+  margin: 0 auto;
+  width: 100px;
+  display: flex;
+  height: 40%;
+  background-color: #ffc500;
+}
+
+.content-text {
+  width: 100%;
+  height: 100%;
+  color: #f0eeee;
+  margin-bottom: 40rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 25rpx;
+}
+
+.a {
+  text-align: center;
+  width: 100%;
+  height: 50%;
+}
+
+.nav-item {
+  width: 90%;
+  height: 50px;
+  margin: 3px auto;
+  background-color: #ffff;
+  border-radius: 10rpx;
+}
+
+.iconfont {
+  width: 40px;
+  height: 40px;
+}
+
+.text {
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 180rpx;
+}
+
+.le {
+  float: left;
+}
+
+.ri {
+  float: right;
+}
+
+.imagess {
+
+  margin: 0 auto;
+  width: 100px;
+  display: flex;
+  height: 120px;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.bottom {
+  border-radius: 50rpx;
+  margin: -35rpx 200rpx;
+  font-size: 35rpx;
+  background-color: rgb(221, 219, 219);
+}

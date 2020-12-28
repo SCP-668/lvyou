@@ -1,0 +1,15 @@
+<view class="tjlx-l" >
+
+
+	<block wx:for="{{tjlxList}}" wx:key="_id">
+		<view class="tjlx-p" >
+			<x-tjlx-card tjlx="{{item}}" data-tjlxid="{{item._id}}" bind:tap="goComment" bind:search="onSearch"/>
+		</view>
+
+	</block>
+</view>
+
+
+
+
+

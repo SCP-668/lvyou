@@ -1,0 +1,16 @@
+<block  wx:for="{{tjlxList}}" wx:key="_id" style="  margin-bottom: 5px;">
+
+	<view class="a">
+
+
+
+		<x-dingdan-card dingdan="{{item}}" data-tjlxid="{{item._id}}" bind:tap="goComment" bind:search="onSearch" />
+
+
+	<view class="del" data-id='{{item._id}}' bindtap="remove">删除订单</view>
+	</view>
+
+</block>
+<view >
+<text class="tab-content1">您没有更多相关订单哦！</text>
+</view>

@@ -1,0 +1,83 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="search">
+	<icon class="search-icon" type="search"></icon>
+	<input type="text" placeholder="请输入搜索内容"></input>
+</view>
+
+
+
+<swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000">
+
+		<block wx:for="{{swiperImgUrls}}" wx:key="url">
+			<swiper-item>
+				<image class="img" src="{{item.fileid}}" mode="widthFix"></image>
+			</swiper-item>
+		</block>
+
+</swiper>
+
+
+<view class="nav">
+ <view class="nav-item" bindtap='lxfb'>
+		<image src="/images/fabu.png" style="width:30px;height:30px" bindtap="onTapTofb"></image>
+		<text>旅游发布</text>
+</view>
+<view class="nav-item" bindtap='grxb'>
+	<image src="/images/yb.png" style="width:30px;height:30px"></image>
+	<text>个人相伴</text>
+</view>
+<view class="nav-item" bindtap='tjlx'>
+	<image src="/images/lx.png" style="width:30px;height:30px"></image>
+	<text>推荐路线</text>
+</view>
+<view class="nav-item" bindtap='lxdr'>
+	<image src="/images/dr.png" style="width:30px;height:30px"></image>
+	<text>旅行达人</text>
+</view>
+
+</view>
+<view class="nav">
+	<view class="nav-item" bindtap='xjphb'>
+		<image src="/images/sjphb.png" style="width:30px;height:30px"></image>
+		<text>商家排行榜</text>
+	</view>
+	<view class="nav-item" bindtap='jlbphb'>
+		<image src="/images/phb.png" style="width:30px;height:30px"></image>
+		<text>俱乐部排行榜</text>
+	</view>
+	<view class="nav-item" bindtap='lysp'>
+		<image src="/images/sp.png" style="width:30px;height:30px"></image>
+		<text>旅游视频</text>
+	</view>
+	<view class="nav-item" bindtap='rmyj'>
+		<image src="/images/ymyj.png" style="width:30px;height:30px"></image>
+		<text>热门游记</text>
+	</view>
+	<x-login modalShow="{{modalShow}}" bind:loginsuccess="onLoginSuccess" bind:loginfail="onLoginFail"></x-login>
+
+</view>
+
+
+<view class='lx'>
+
+	<text>推荐路线</text>
+</view>
+
+<scroll-view scroll-x="true" class="nav1" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+	<block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+		<view class="nav-item1 {{currentTab == idx ?'active':''}}" data-current="{{idx}}" bindtap="switchNav">{{navItem.text}}</view>
+	</block>
+
+
+	</scroll-view>
+
+	<!-- 页面内容 -->
+	<view class="tab-box" current="{{currentTab}}" duration="300" bindchange="switchTab">
+<view wx:for-item="tabItem" wx:for-index="idx" wx:key="idx" class="tab-content">
+			<block wx:for="{{tjlxList}}" wx:key="_id">
+				<view class="tjlx-p">
+					<card2 tjlx="{{item}}" data-tjlxid="{{item._id}}" bind:tap="goComment" bind:search="onSearch" />
+				</view>
+			</block>
+			</view>
+	</view>

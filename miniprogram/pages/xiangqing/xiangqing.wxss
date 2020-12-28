@@ -1,0 +1,57 @@
+/* pages/xiangqing/xiangqing.wxss */
+page{
+  background-color: #E4E4E4
+}
+/* 第一栏样式 */
+.info{
+  display: flex;
+  align-content: center;
+  margin: 10rpx 0;
+  background-color: #fff
+}
+.big{
+  border-radius: 100%;
+  width: 100rpx;
+  height: 100rpx;
+}
+.text{
+  flex: 1;
+  margin-left: 40rpx
+}
+.text>view{
+  margin: 10rpx 0
+}
+/* 第二栏样式 */
+.xq-info{
+  background-color: #fff
+}
+.xq-text{
+  text-indent: 20rpx;
+  display: -webkit-box;
+  margin: 5rpx 10rpx
+}
+.xq-img{
+  display: flex;
+  margin-top: 10rpx;
+}
+.xq-imgsize{
+  margin-left: 20rpx;
+  width: 220rpx;
+  height: 220rpx;
+  margin-bottom: 10rpx
+}
+/* 第三栏样式 */
+.xq-mess{
+  background-color: #fff;
+  height: 320rpx
+}
+.xq-mess1{
+  background-color: #fff;
+  height: 150rpx
+}
+.xq-mess view{
+  margin: 20rpx 0
+}
+.xq-mess1 view{
+  margin: 20rpx 0
+}

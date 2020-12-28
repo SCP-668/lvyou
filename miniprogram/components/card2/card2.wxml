@@ -1,0 +1,10 @@
+<view class="tu" id="0">
+  <view class="tu-item">
+    <block  wx:key="index">
+      <image class="img" src="{{tjlx.img[0]}}" mode="aspectFill"></image>
+    </block>
+    <view class="blog-content">{{tjlx.content}}
+    </view>
+
+  </view>
+</view>

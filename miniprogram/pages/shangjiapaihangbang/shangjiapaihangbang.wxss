@@ -1,0 +1,96 @@
+view {
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+}
+
+.content {
+  height: 30px;
+  display: flex;
+  line-height: 8px;
+  border-bottom: 4px solid #fed71a;
+}
+
+.img, .img1,.img0 {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.img0 > image {
+  width: 55px;
+  margin-left:-20%;
+  margin-top:-5%;
+}
+
+.img1 > image {
+  margin-top: -50rpx;
+}
+
+image {
+  width: 40px;
+  height: 100%;
+  margin-top: -10px;
+  border-radius: 40px;
+}
+
+.zong {
+  height: 350rpx;
+  padding-top: 10rpx;
+  margin-top: -15rpx;
+  background-image: linear-gradient(to top, #f6d365 0%, #fda085 100%);
+}
+
+.zong > .content-list {
+  display: flex;
+  width: 80%;
+  height: 310rpx;
+  background: white;
+}
+
+.di1 {
+  margin-top: 6%;
+}
+
+.di2 {
+  margin-top: 11%;
+}
+
+.di0 {
+  margin-top: 1%;
+}
+
+
+.content-list1 {
+  display: flex;
+  height: 50px;
+  border-bottom: 3px solid rgba(128, 128, 128, 0.521);
+}
+
+.xuhao {
+  flex: 2;
+  text-align: left;
+  display: flex;
+}
+
+.xuhao > view {
+  flex: 1;
+}
+
+.renqizhi {
+  flex: 3;
+  text-align: center;
+}
+
+.renqizhi1{
+  text-align: center;
+}
+
+.shangjia {
+  flex: 3;
+}
+
+.shangjia1 {
+  margin-top: -30%;
+}

@@ -1,0 +1,33 @@
+var common = {
+  orderStatused: function (_num) {
+    switch (_num) {
+      case 200: return "待推送"; break;
+      case 210: return "已推送"; break;
+      case 300: return "待接单"; break;
+      case 310: return "已报价"; break;
+      case 320: return "结束报价"; break;
+      case 330: return "待预付款"; break;
+      case 400: return "待预约"; break;
+      case 410: return "已预约"; break;
+      case 500: return "待服务"; break;
+      case 510: return "已服务"; break;
+      case 600: return "确认付款"; break;
+      case 610: return "已付款"; break;
+      case 700: return "待评价"; break;
+      case 800: return "退款申请"; break;
+      case 810: return "退款成功"; break;
+      case 820: return "退款审核中"; break;
+      case 830: return "退款失败"; break;
+      case 900: return "取消订单"; break;
+      case 910: return "取消成功"; break;
+      case 1000: return "交易成功"; break;
+      case 1001: return "交易失败"; break;
+      case 1002: return "交易关闭"; break;
+      default: return ""; break;
+    }
+  }
+}
+ 
+module.exports = {
+  orderText: common.orderStatused,
+}

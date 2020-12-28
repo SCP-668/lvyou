@@ -1,0 +1,56 @@
+<!--pages/xiangqing/xiangqing.wxml-->
+<!-- 头像名称 -->
+<view class="info">
+  <view>
+    <image class="big" src="{{ybList.avatarUrl}}"></image>
+  </view>
+  <view class="text">
+    <view>{{ybList.nickName}}</view>
+    <view>{{ybList.createTime}}</view>
+  </view>
+</view>
+<!-- 内容图片 -->
+<view class="xq-info">
+  <view>
+    <text class="xq-text">{{ybList.Content}}</text>
+  </view>
+  <view class="xq-img">
+    <block wx:for="{{ybList.img}}" wx:key="index">
+      <image class="xq-imgsize" src="{{item}}"></image>
+    </block>
+  </view>
+</view>
+<!-- 信息 -->
+<view class="xq-mess">
+  <view>
+    <text>开始时间：</text>
+    <text>{{ybList.Starttime}}</text>
+
+  </view>
+  <view>
+    <text>结束时间：</text>
+    <text>{{ybList.Endtime}}</text>
+  </view>
+  <view>
+    <text>目的地：</text>
+    <text>{{ybList.Destination}}</text>
+  </view>
+  <view>
+    <text>出发地：</text>
+    <text>{{ybList.Place}}</text>
+  </view>
+  <view>
+    <text>交通工具：</text>
+    <text>{{ybList.Tool}}</text>
+  </view>
+</view>
+<view class="xq-mess1">
+  <view>
+    <text>约伴对象：</text>
+    <text>{{ybList.Gender}}</text>
+  </view>
+  <view>
+    <text>联系方式：</text>
+    <text>{{ybList.Phone}}</text>
+  </view>
+</view>

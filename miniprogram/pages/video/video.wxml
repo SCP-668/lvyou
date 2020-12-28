@@ -1,0 +1,23 @@
+<!--pages/video/video.wxml-->
+  <!-- 头部 -->
+  <view class="header">
+    <view class="publish-container" bind:tap="goTovideofabu">
+      <i class="iconfont icon-fabu"></i>
+    </view>
+    <view class="search-container" >
+      <x-search bind:search="onSearch"/>
+    </view>
+  </view>
+
+<view class="blog-list">
+<!-- 主体 -->
+    <block wx:for="{{videolist}}" wx:key="_id">
+      <x-video-card videolist="{{item}}" data-videoListid="{{item._id}}" bind:tap="goComment"/>
+      <x-video-ctrl videolist="{{item}}" videoListId="{{item._id}}" bind:refreshCommentList="onPullDownRefresh" />
+    </block>
+</view>
+
+<!-- 底部弹出层 -->
+<x-login modalShow="{{modalShow}}" bind:loginsuccess="onLoginSuccess" bind:loginfail="onLoginFail">
+
+</x-login>

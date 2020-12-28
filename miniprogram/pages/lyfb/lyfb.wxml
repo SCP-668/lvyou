@@ -1,0 +1,68 @@
+<view class="container" >
+	<textarea class="content" placeholder="路线详情..." bindinput="onInput" maxlength="140" auto-focus bindfocus="onFocus" bindblur="onBlur"></textarea>
+
+<view class="section">  
+  <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="onInputdate">  
+    <view class="picker">  
+     开始时间: {{times}}
+    </view>  
+  </picker>  
+</view>  
+
+
+<view class="section">  
+  <picker mode="date" value="{{date}}" start="1978-01-01" end="2050-1-23" bindchange="onInputlx">  
+    <view class="picker">  
+      开始日期: {{dates}}  
+    </view>  
+  </picker>  
+</view>  
+<view class="section">  
+  <picker mode="time" value="{{time1}}" start="00:00" end="23:59" bindchange="onInputtime1">  
+    <view class="picker">  
+     结束时间: {{time1}}
+    </view>  
+  </picker>  
+</view>  
+
+
+<view class="section">  
+  <picker mode="date" value="{{data1}}" start="1978-01-01" end="2050-1-23" bindchange="onInputdata1">  
+    <view class="picker">  
+      结束日期: {{data1}}  
+    </view>  
+  </picker>  
+</view>  
+
+<input placeholder-class="placeholder" class="section" placeholder="出发地点:" bindinput="onInputdd"></input>
+<input placeholder-class="placeholder" class="section" placeholder="目标地点:" bindinput="onInputmdd"></input>
+<input name="phone" placeholder-class="placeholder" bindblur="phoneChange" class="section" placeholder="手机号码:" bindinput="onInputhaoma"></input>
+<input placeholder-class="placeholder" class="section" placeholder="交通工具:" bindinput="onInputjtgj"></input>
+<input placeholder-class="placeholder" class="section" placeholder="所需费用:" bindinput="onInputfy"></input>
+
+
+
+
+	<view class="image-list">
+		<!-- 显示图片 -->
+		<block wx:for="{{images}}" wx:key="*this">
+			<view class="image-wrap">
+				<image class="image" src="{{item}}" mode="aspectFill" bind:tap="onPreviewImage" data-imgsrc="{{item}}"></image>
+				<i class="iconfont icon-shanchu" bind:tap="onDelImage" data-index="{{index}}"></i>
+			</view>
+		</block>
+
+		<!-- 选择图片 -->
+		<view class="image-wrap selectphoto" hidden="{{!selectPhoto}}" bind:tap="onChooseImage">
+			<i class="iconfont icon-untitled44"></i>
+		</view>
+
+	</view>
+</view>
+ 
+<view class="footer" style="bottom:{{footerBottom}}px" >
+	<text class="words-num">{{wordsNum}}</text>
+	<button type="primary" class="send-btn" bind:tap="send"  >发布</button>
+</view>
+
+   

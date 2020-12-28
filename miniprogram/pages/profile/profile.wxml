@@ -1,0 +1,77 @@
+<view>
+
+
+	<view class='content1'>
+		<view class='imagess' style="  margin-top:100rpx">
+
+
+
+			<image style="width: 100px;height: 100px;"  src='{{userInfo[0].avatarUrl}}'></image>
+			<text>{{userInfo[0].nickName}}</text>
+
+		</view>
+
+	</view>
+
+
+
+	<view style="  margin-top:150rpx;">
+		<view class="nav-item">
+			<navigator hover-class="none" url="/pages/profile/profile-huiyuan/profile-huiyuan">
+				<image class="iconfont le" src='/images/sj.png'></image>
+
+				<text class="text">会员信息</text>
+
+				<image class="iconfont ri" src='/images/gd.png'></image>
+			</navigator>
+		</view>
+
+		<view class="nav-item">
+			<navigator hover-class="none" url="/pages/profile/profile-dingdan/profile-dingdan">
+				<image class="iconfont le" src='/images/dd.png'></image>
+
+				<text class="text">我的订单</text>
+
+				<image class="iconfont ri" src='/images/gd.png'></image>
+			</navigator>
+		</view>
+
+
+
+
+
+
+		<view class="nav-item">
+			<navigator hover-class="none" url="/pages/profile/profile-youji/profile-youji">
+				<image class="iconfont le" src='/images/fabu.png'></image>
+
+				<text class="text">我的游记</text>
+
+				<image class="iconfont ri" src='/images/gd.png'></image>
+			</navigator>
+		</view>
+
+		<view class="nav-item">
+			<navigator hover-class="none" bindtap="tuichu">
+				<image class="iconfont le" src='/images/tc.png'></image>
+
+				<text class="text">退出登录</text>
+
+				<image class="iconfont ri" src='/images/gd.png'></image>
+			</navigator>
+		</view>
+
+
+	</view>
+
+
+
+
+
+
+
+
+
+
+
+</view>

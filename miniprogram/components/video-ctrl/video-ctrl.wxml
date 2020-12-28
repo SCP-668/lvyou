@@ -1,0 +1,30 @@
+<!--components/video-ctrl/video-ctrl.wxml-->
+<view class="ctrl">
+
+  <view class="ctrl-item share">
+    <button open-type="share" data-blogid="{{blogId}}" data-blog="{{blog}}" class="share-btn" hover-class="share-hover">
+      <i class="iconfont icon-fenxiang icon"></i>
+    
+    </button>
+  </view>
+
+  <view class="ctrl-item" bind:tap="onComment">
+    <i class="iconfont icon-pinglun icon"></i>
+  </view>
+  
+  <view class="ctrl-item" bindtap="onUpTap">
+    <i class="iconfont icon-dianzan1 icon {{upStatus ? 'active' : ''}}"></i>
+    <text>{{videolist.upNum}}</text>
+  </view>
+
+</view>
+
+
+<x-login modalShow="{{loginShow}}" bind:loginsuccess="onLoginsuccess" bind:loginfail="onLoginfail" />
+
+<x-bottom-modal modalShow="{{modalShow}}" class="modal" >
+  <form slot="modal-content"  bind:submit="onSend">
+    <textarea name="content" class="comment-content" placeholder="写评论" value="{{content}}" fixed="true"></textarea>
+    <button class="send" form-type="submit">发送</button>
+  </form>
+</x-bottom-modal>

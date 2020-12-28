@@ -1,0 +1,7 @@
+{
+  "usingComponents": {    
+    "x-dingdan-card": "/components/dingdan-card/dingdan-card"
+  
+  },
+  "navigationBarTitleText": "订单详情"
+}
